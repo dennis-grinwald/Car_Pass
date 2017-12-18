@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car-Pass DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>Welcome to the Car-Pass Manager</h1>
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Inputs: add Car-Pass</th>
+          <th>Inputs: transfer Car-Pass</th>
+          <th>Inputs: delete Car-Pass</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="number" id="inputIdCreate"  placeholder="Enter Car-Pass ID" /></td>
+          <td><input type="number" id="inputIdTransfer" placeholder="Enter Car-Pass ID"/></td>
+          <td><input type="number" id="inputIdDelete" placeholder="Enter Car-Pass ID"/></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="inputFINCreate" placeholder="Enter Car-Pass FIN/VIN" size="30%"/></td>
+          <td><input type="text" id="inputNewOwnerTransfer" placeholder="Enter new Owner Address" size="30%"/></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="inputLabelCreate" placeholder="Enter Car-Pass Brand" size="30%"/></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="inputModelCreate" placeholder="Enter Car-Pass Model" size="30%"/></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="inputOwnerCreate" placeholder="Enter Car-Pass Owner Address" size="30%"/></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msgAdd"></div>
+  </div>
+  <button href="#" id="button1" class="btn btn-danger">Add Car-Pass</button>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+  <button href="#" id="button2" class="btn btn-danger">Transfer Ownership</button>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+  <button href="#" id="button3" class="btn btn-danger">Delete Car-Pass</button>
+</body>
+
+<p>
+</p>
+
+<body class="container">
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Input</th>
+          <th>Car-Pass Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" id="inputIdCPInfo" placeholder="Enter Car-Pass ID" size="30%" /></td>
+          <td id="outputFIN">FIN/VIN: </td>
+        </tr>
+          <td></td>
+          <td id="outputBrand">Brand: </td>
+        </tr>
+          <td></td>
+          <td id="outputModel">Model: </td>
+        </tr>
+          <td></td>
+          <td id="outputAddress">Owner: </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msgTransfer"></div>
+  </div>
+  <button href="#" id="button4" class="btn btn-danger">Display Car-Pass details</button>
+</body>
+
+<p>
+</p>
+
+<body class="container">
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Total Count of Car-Passes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="outputCount">Count: </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msgDelete"></div>
+  </div>
+  <button href="#" id="button5" class="btn btn-danger">Display total number of Car-Passes</button>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./app/javascripts/app.js"></script>
+
+<p>
+</p>
+
+</html>
